@@ -4,8 +4,6 @@
 var collision_object = argument0;
 
 #region Horizontal Collisions
-show_debug_message("moving: " + string(xspeed))
-
 
 // Check if we are meeting the collision object
 if(place_meeting(x + xspeed, y, collision_object)) {
@@ -14,7 +12,7 @@ if(place_meeting(x + xspeed, y, collision_object)) {
 	// Check if we can move one pixel closer to the collision object
 	while(!place_meeting(x + sign(xspeed), y, collision_object))
 	{
-		show_debug_message("slow moving: " + string(xspeed))
+
 		// If we can move one pixel closer
 		x += sign(xspeed);
 	}

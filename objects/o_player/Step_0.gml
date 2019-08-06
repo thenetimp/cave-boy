@@ -47,6 +47,7 @@ switch(state) {
 			// if up is pressed start jump;
 			if(up) {
 			  yspeed = jump_height;
+			  audio_play_sound(a_jump, 5, false);
 			}
 			
 		}
@@ -59,7 +60,6 @@ switch(state) {
 		// Check for moving left or right
 		if(right or left) {
 			xspeed += (right - left) * acceleration;
-
 	
 			// Clamp function prevents value from 
 			// exceeding minimum or maxiumn set
@@ -70,6 +70,10 @@ switch(state) {
 		} else {
 			// Gracefully bring us to a stop.
 			apply_friction(acceleration);
+		}
+		
+		if(place_meeting(x,y+yspeed+1,o_solid) and yspeed > 0) {
+			audio_play_sound(a_step, 6, false);
 		}
 
 		move(o_solid);
