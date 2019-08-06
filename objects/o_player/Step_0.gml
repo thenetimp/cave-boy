@@ -91,7 +91,7 @@ switch(state) {
 			yspeed = 0;
 
 			// Check the horizontal position, and Move against ledge
-			while(!position_meeting(x + image_xscale, y, o_solid)) {
+			while(!place_meeting(x + image_xscale, y, o_solid)) {
 				x += image_xscale;
 			}
 			
