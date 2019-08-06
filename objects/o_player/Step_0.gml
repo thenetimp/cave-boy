@@ -16,7 +16,29 @@ switch(state) {
 
 #region Moving State"
 	case player.moving:
+
+		// Change direction of sprite
+		if(xspeed != 0) {
+			image_xscale = sign(xspeed);
+		}
 	
+		// Check for moving left or right
+		if(right or left) {
+			xspeed += (right - left) * acceleration;
+	
+			// Clamp function prevents value from 
+			// exceeding minimum or maxiumn set
+			// In our example "xspeed can be no greater than max_speed (moving right at max_speed)
+			// and no less than negative max_speed (moving left at max_speed)
+			xspeed = clamp(xspeed, -max_speed, max_speed);
+		
+		} else {
+			// Gracefully bring us to a stop.
+			apply_friction(acceleration);
+		}
+
+		move(o_solid);
+
 		break;
 #endregion
 #region Ledge Grab State"
