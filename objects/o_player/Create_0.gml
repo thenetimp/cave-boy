@@ -12,7 +12,7 @@ grab_width = 18;
 
 enum player {
 	moving,
-	ledge_grabbing,
+	ledge_grab,
 	door,
 	hurt,
 	death

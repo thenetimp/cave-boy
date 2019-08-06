@@ -76,12 +76,53 @@ switch(state) {
 			audio_play_sound(a_step, 6, false);
 		}
 
+		// Move if we should move.
 		move(o_solid);
+		  
+		// Check for lege grab state
+		var falling = y - yprevious > 0;
+		var wasnt_wall = !position_meeting(x + (grab_width * image_xscale), yprevious, o_solid);
+		var is_wall = position_meeting(x + (grab_width * image_xscale), y, o_solid);
+
+		if(falling and wasnt_wall and is_wall) {
+
+			// set our speeds to 0
+			xspeed = 0;
+			yspeed = 0;
+
+			// Check the horizontal position, and Move against ledge
+			while(!position_meeting(x + image_xscale, y, o_solid)) {
+				x += image_xscale;
+			}
+			
+			// Check the vertical position
+			while(position_meeting(x + (grab_width * image_xscale), y - 1, o_solid))
+			{
+				y -= 1;
+			}
+			
+			sprite_index = s_player_ledge_grap;
+			state = player.ledge_grab
+			audio_play_sound(a_step, 6, false);
+			
+		}
 
 		break;
 #endregion
 #region Ledge Grab State"
-	case player.ledge_grabbing:
+	case player.ledge_grab:
+
+		// Allow us to fall down.
+		if(down) {
+			state = player.moving;
+		}
+
+		// Make sure we can jump up
+		if(up) {
+			state = player.moving;
+			yspeed = jump_height;
+		}
+	
 		break;
 #endregion
 #region Door State"
