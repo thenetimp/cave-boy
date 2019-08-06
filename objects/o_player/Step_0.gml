@@ -16,6 +16,16 @@ switch(state) {
 
 #region Moving State"
 	case player.moving:
+		// Set sprite
+		if(xspeed == 0) {
+			sprite_index = s_player_idle;
+		}
+		else
+		{
+			sprite_index = s_player_walk;
+		}
+	
+	
 		// Check if player is on the ground
 		if(!place_meeting(x, y + 1, o_solid)) {
 			yspeed += gravity_acceleration;
