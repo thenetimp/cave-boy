@@ -25,16 +25,30 @@ switch(state) {
 			sprite_index = s_player_walk;
 		}
 	
-	
 		// Check if player is on the ground
 		if(!place_meeting(x, y + 1, o_solid)) {
 			yspeed += gravity_acceleration;
 			
-			// more code here
+			// Player is in the air
+			
+			sprite_index = s_player_jump;
+			image_index = (yspeed > 0);
+			
+			if(up_release and yspeed < -6) {
+				yspeed = -3;
+			}
+			
 		}
 		else
 		{
+			// If we are on the ground yspeed is 0;
 			yspeed = 0;
+
+			// if up is pressed start jump;
+			if(up) {
+			  yspeed = jump_height;
+			}
+			
 		}
 
 		// Change direction of sprite
@@ -45,6 +59,7 @@ switch(state) {
 		// Check for moving left or right
 		if(right or left) {
 			xspeed += (right - left) * acceleration;
+
 	
 			// Clamp function prevents value from 
 			// exceeding minimum or maxiumn set
