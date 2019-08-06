@@ -16,6 +16,16 @@ switch(state) {
 
 #region Moving State"
 	case player.moving:
+		// Check if player is on the ground
+		if(!place_meeting(x, y + 1, o_solid)) {
+			yspeed += gravity_acceleration;
+			
+			// more code here
+		}
+		else
+		{
+			yspeed = 0;
+		}
 
 		// Change direction of sprite
 		if(xspeed != 0) {
