@@ -9,7 +9,9 @@
         "11e79567-2051-467a-9d2a-0a07b3e256d0",
         "46366a63-fd42-4f80-b0b8-591daf2afdbe",
         "10bd578f-3cbb-4406-b08d-7931f1365e43",
-        "561ff857-4e01-4091-9a91-61f8c7f337d2"
+        "561ff857-4e01-4091-9a91-61f8c7f337d2",
+        "6634459b-0be2-4f27-9301-a54e91f96f44",
+        "63b0d6f7-d128-4eba-bbb6-e495e154ecdd"
     ],
     "filterType": "GMSprite",
     "folderName": "Level",
