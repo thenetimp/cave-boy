@@ -6,7 +6,8 @@
     "children": [
         "4f598f91-6062-41de-b133-f50df37c2279",
         "cc525f66-697c-41d3-8f01-c973b9e0ac1c",
-        "230407a4-6761-4c05-809a-fa2bacb6b014"
+        "230407a4-6761-4c05-809a-fa2bacb6b014",
+        "c6663968-bf8d-4b85-bceb-3a4ed46f9d02"
     ],
     "filterType": "GMObject",
     "folderName": "Level",

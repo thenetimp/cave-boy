@@ -131,7 +131,7 @@ switch(state) {
 
 		// fade out
 		if(image_alpha > 0){
-			image_alpha -= .05
+			image_alpha -= .05 
 		}
 		else
 		{

@@ -1,48 +1,28 @@
 {
-    "id": "7c55617a-0ae2-4217-9530-ee696e9a6862",
+    "id": "c6663968-bf8d-4b85-bceb-3a4ed46f9d02",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_player",
+    "name": "o_sapphire",
     "eventList": [
         {
-            "id": "eb8ffa2f-48c2-4d0e-a8b9-eb318863b961",
+            "id": "513a608d-f716-422e-b283-5ae1ff5e577c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "7c55617a-0ae2-4217-9530-ee696e9a6862"
+            "m_owner": "c6663968-bf8d-4b85-bceb-3a4ed46f9d02"
         },
         {
-            "id": "aec3fc33-a3c1-403f-83c7-eeb0d2c8978b",
+            "id": "15c6206e-714a-43bf-832a-d9d919f51eaa",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "7c55617a-0ae2-4217-9530-ee696e9a6862"
-        },
-        {
-            "id": "8e882f8c-7864-457c-91af-c793ff383d05",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "4f598f91-6062-41de-b133-f50df37c2279",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "7c55617a-0ae2-4217-9530-ee696e9a6862"
-        },
-        {
-            "id": "a6346cc5-e8b5-4b70-8348-23a0939713cf",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "c6663968-bf8d-4b85-bceb-3a4ed46f9d02",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "7c55617a-0ae2-4217-9530-ee696e9a6862"
+            "m_owner": "c6663968-bf8d-4b85-bceb-3a4ed46f9d02"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -63,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "c9b6eb7e-b783-456f-9d3a-b2dcfbb3ac92",
+    "spriteId": "10bd578f-3cbb-4406-b08d-7931f1365e43",
     "visible": true
 }
