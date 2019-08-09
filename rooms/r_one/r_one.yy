@@ -26,8 +26,7 @@
         "94542591-e2fd-4bf7-808e-a896a19d1d96",
         "b9a10e17-b18d-479b-979c-b12772469238",
         "6c9e1b45-5c35-4337-8630-180b2ace9898",
-        "97dea1da-a0c3-49b2-8496-b76da6560911",
-        "58aa7990-c493-4a49-83ce-0df5d2886e75"
+        "840a8f6a-eb2e-4ba3-b2bf-6eb17866c04b"
     ],
     "IsDnD": false,
     "layers": [
@@ -74,8 +73,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_4F22A6BD","id": "97dea1da-a0c3-49b2-8496-b76da6560911","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4F22A6BD","objId": "540ab063-6975-46f8-ae0d-f2b6a1160e38","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 176,"y": 304},
-{"name": "inst_52ADA2B9","id": "58aa7990-c493-4a49-83ce-0df5d2886e75","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_52ADA2B9","objId": "540ab063-6975-46f8-ae0d-f2b6a1160e38","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 448,"y": 304}
+{"name": "inst_7774D32D","id": "840a8f6a-eb2e-4ba3-b2bf-6eb17866c04b","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7774D32D","objId": "145693a0-8dca-41b6-a976-91adb188aa09","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 512,"y": 304}
             ],
             "layers": [
 
