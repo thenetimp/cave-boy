@@ -35,15 +35,13 @@ switch(state) {
 				image_speed = 0;
 				image_index = 0;
 			}
-			
-			//make sure the spider is looking the right direction.
-			if(xspeed != 0)
-			{
-				image_xscale = sign(xspeed);
-			}
-			
-			move(o_solid);
+		}			
+		//make sure the spider is looking the right direction.
+		if(xspeed != 0) {
+			image_xscale = sign(xspeed);
 		}
+			
+		move(o_solid);
 	break;
   #endregion
 
